@@ -5,8 +5,8 @@ Este projeto oferece uma solução para codificação de texto, além de um hist
 
 ## Funcionalidades
 
-- Codificador texto
-- Decodificador texto
-- Exclusão de históricos
+- Codificador de texto
+- Decodificador de texto
+- Exclusão de histórico
 
 ## Screenshots
