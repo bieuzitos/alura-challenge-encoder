@@ -10,3 +10,5 @@ Este projeto oferece uma solução para codificação de texto, além de um hist
 - Exclusão de histórico
 
 ## Screenshots
+
+![App Screenshot](https://raw.githubusercontent.com/bieuzitos/alura-challenge-encoder/main/assets/images/template.png)
