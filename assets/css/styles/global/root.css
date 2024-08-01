@@ -1,0 +1,81 @@
+:root {
+
+  /*
+  |--------------------------------------------------------------------------
+  | Background
+  |--------------------------------------------------------------------------
+  */
+
+  --background-color: #1E1E1E;
+  --background-color-primary: #303030;
+  --background-color-secondary: #393939;
+  --background-color-tertiary: #454545;
+
+  /*
+  |--------------------------------------------------------------------------
+  | Text Color
+  |--------------------------------------------------------------------------
+  */
+
+  --text-color: #FFFFFF;
+  --text-color-primary: #E1E1E6;
+  --text-color-secondary: #C4C4CC;
+  --text-color-tertiary: #8D8D99;
+
+  /*
+  |--------------------------------------------------------------------------
+  | Colors
+  |--------------------------------------------------------------------------
+  */
+
+  --base-primary: #0055B3;
+  --base-secondary: #003E7A;
+
+  --danger-primary: #FF8360;
+  --danger-secondary: #D9534F;
+
+  /*
+  |--------------------------------------------------------------------------
+  | Sizes
+  |--------------------------------------------------------------------------
+  */
+
+  --border-radius: 1rem;
+  --border-radius-primary: .75rem;
+  --border-radius-secondary: .5rem;
+  --border-radius-tertiary: .25rem;
+
+  --zindex-dropdown: 1000;
+  --zindex-fixed: 1020;
+  --zindex-modal: 1030;
+  --zindex-popover: 1040;
+  --zindex-tooltip: 1050;
+  --zindex-notification: 1100;
+
+}
+
+[theme-light] {
+
+  /*
+  |--------------------------------------------------------------------------
+  | Background
+  |--------------------------------------------------------------------------
+  */
+
+  --background-color: #FFFFFF;
+  --background-color-primary: #F0F0F0;
+  --background-color-secondary: #E0E0E0;
+  --background-color-tertiary: #D0D0D0;
+
+  /*
+  |--------------------------------------------------------------------------
+  | Text Color
+  |--------------------------------------------------------------------------
+  */
+
+  --text-color: #000000;
+  --text-color-primary: #333333;
+  --text-color-secondary: #666666;
+  --text-color-tertiary: #999999;
+
+}

@@ -1,0 +1,164 @@
+/* 
+ * 
+ * MODAL
+ * 
+ */
+.modal {
+  position: fixed;
+  z-index: var(--zindex-modal);
+  overflow-x: hidden; overflow-y: auto;
+  display: none;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(30, 30, 30, .8);
+  outline: 0
+}
+
+/* MODAL - DIALOG */
+.modal .modal-dialog {
+  pointer-events: none;
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: auto;
+  min-height: calc(100% - 1rem);
+  margin: .5rem;
+  transition: transform .3s ease-out;
+  transform: translate(0, -50px);
+}
+
+/* MODAL - CONTENT */
+.modal .modal-content {
+  pointer-events: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 550px; height: auto;
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, var(--box-shadow));
+  border-radius: var(--border-radius-primary);
+  background-color: var(--background-color-primary);
+}
+
+/* MODAL - HEADER */
+.modal .modal-content .modal-header {
+  user-select: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top-left-radius: var(--border-radius-primary);
+  border-top-right-radius: var(--border-radius-primary);
+  background-color: var(--background-color-secondary);
+  padding: .75rem;
+}
+
+/* MODAL - HEADER | TITLE */
+.modal .modal-content .modal-header .modal-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .75rem;
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--text-color-primary);
+}
+
+/* MODAL - HEADER | CLOSE */
+.modal .modal-content .modal-header .modal-close button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 28px; height: 28px;
+  border-radius: var(--border-radius-secondary);
+  background-color: transparent;
+  font-size: 16px;
+  color: var(--text-color-secondary);
+  transition: background-color .15s ease-in-out, color .15s ease-in-out;
+  cursor: pointer;
+}
+.modal .modal-content .modal-header .modal-close button:hover {
+  background-color: var(--background-color-tertiary);
+  color: var(--text-color-primary);
+}
+
+/* MODAL - BODY */
+.modal .modal-content .modal-body {
+  user-select: none;
+  display: flex;
+  flex-direction: column;
+  padding: .75rem;
+}
+
+/* MODAL - BODY | SUBTITLE */
+.modal .modal-content .modal-body .modal-subtitle {
+  font-size: 16px;
+  color: var(--text-color-secondary);
+}
+
+/* MODAL - FOOTER */
+.modal .modal-content .modal-footer {
+  user-select: none;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid var(--background-color-secondary);
+  padding: .75rem;
+}
+
+/* MODAL - FOOTER | SUBTITLE */
+.modal .modal-content .modal-footer .modal-subtitle {
+  font-size: 14px;
+  color: var(--text-color-secondary);
+}
+
+/* MODAL - FOOTER | ACTION */
+.modal .modal-content .modal-footer .modal-action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+}
+
+/* MODAL - FOOTER | ACTION - BUTTON */
+.modal .modal-content .modal-footer .modal-action .modal-button button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px; height: 35px;
+  border-radius: var(--border-radius-secondary);
+  background-color: var(--background-color-secondary);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text-color-secondary);
+  transition: background-color .15s ease-in-out, color .15s ease-in-out;
+  cursor: pointer;
+}
+.modal .modal-content .modal-footer .modal-action .modal-button button:hover {
+  background-color: var(--background-color-tertiary);
+  color: var(--text-color-primary);
+}
+
+/*
+|--------------------------------------------------------------------------
+| Sizes
+|--------------------------------------------------------------------------
+*/
+
+@media (prefers-reduced-motion:reduce) {
+
+  /* MODAL - DIALOG */
+  .modal .modal-dialog {
+    transition: none;
+  }
+
+}
+
+@media screen and (min-width: 576px) {
+
+  /* MODAL - DIALOG */
+  .modal .modal-dialog {
+    max-width: 550px; min-height: calc(100% - 3.5rem);
+    margin: 1.75rem auto;
+  }
+
+}

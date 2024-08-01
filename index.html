@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="theme-color" content="#1E1E1E" />
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="./assets/fonts/awesome/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/fonts/roboto/css/all.min.css" />
+
+    <!-- Global -->
+    <link rel="stylesheet" href="./assets/css/styles/global/root.css" />
+    <link rel="stylesheet" href="./assets/css/styles/global/styles.css" />
+
+    <!-- Components -->
+    <link rel="stylesheet" href="./assets/css/styles/components/main.css" />
+    <link rel="stylesheet" href="./assets/css/styles/components/modal.css" />
+    <link rel="stylesheet" href="./assets/css/styles/components/textarea.css" />
+</head>
+
+<body>
+
+    <header></header>
+
+    <main>
+        <section>
+            <div class="textarea left">
+                <textarea name="text" placeholder="Digite aqui o seu texto!"></textarea>
+                <div class="icon">
+                    <i class="fa-solid fa-message"></i>
+                </div>
+                <div class="icon count">
+                    <span data-count="500">500</span>
+                </div>
+            </div>
+
+            <div class="function">
+                <button class="encode" disabled>
+                    <i class="fa-solid fa-lock"></i>
+                    <span>Encriptar</span>
+                </button>
+
+                <div class="action">
+                    <button class="theme">
+                        <i class="fa-solid fa-circle-half-stroke"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <aside>
+            <div class="menu">
+                <div class="menu-header">
+                    <div class="menu-title">
+                        <span>Histórico</span>
+                    </div>
+
+                    <div class="menu-action">
+                        <button>
+                            <i class="fa-solid fa-gear"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="menu-content"></div>
+            </div>
+        </aside>
+    </main>
+
+    <footer></footer>
+
+    <div id="decode" class="modal"></div>
+
+    <!-- Libraries -->
+    <script src="./assets/js/libraries/jquery.min.js"></script>
+
+    <!-- Scripts -->
+    <script src="./assets/js/scripts/storage.js"></script>
+    <script src="./assets/js/scripts/form.js"></script>
+    <script src="./assets/js/scripts/validation.js"></script>
+</body>
+
+</html>
